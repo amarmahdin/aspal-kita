@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aspalkita</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <nav class="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="image/logo.jpg" alt="logo" width="190" height="65" />
+        </a>
+      </div>
+
+      <div class="navbar-nav">
+        <a href="index.html">Beranda</a>
+        <a href="report.html">Laporkan Masalah</a>
+        <a href="allreports.html">Semua Laporan</a>
+        <a href="about.html">Tentang Kami</a>
+      </div>
+
+      <div class="nav-button">
+        <button class="btn" id="loginBtn">Masuk</button>
+        <button class="btn" id="registerBtn">Daftar</button>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <div class="reportt">
+      <div class="form-lap">
+        <h2>Laporkan Masalah Anda</h2>
+        <form>
+          <div class="form-group">
+            <input
+              type="text"
+              id="report-title"
+              name="report-title"
+              placeholder="Judul Laporan"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="report-details"
+              name="report-details"
+              rows="4"
+              placeholder="Detail Laporan"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <select id="report-category" name="report-category">
+              <option value="">Pilih Kategori</option>
+              <option value="category1">Ringan</option>
+              <option value="category2">Parah</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="report-address"
+              name="report-address"
+              rows="2"
+              placeholder="Detail Alamat"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <label for="report-photo"
+              >Upload bukti berupa foto anda dibawah (opsional)</label
+            >
+            <input
+              type="file"
+              id="report-photo"
+              name="report-photo"
+              accept="image/*"
+            />
+          </div>
+          <button type="submit" class="bt1">Lapor!</button>
+        </form>
+      </div>
+      <div class="maps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.8147637542675!2d101.44975165179653!3d0.55738533267936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5ac912e5ab54f%3A0x60bc829ab8be6fee!2sKantor%20Kecamatan%20Rumbai!5e0!3m2!1sid!2sid!4v1712041904000!5m2!1sid!2sid"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer start -->
+    <div class="footer">
+      <div class="foot">
+        <img src="image/logo1.png" alt="" />
+        <p>
+          Memetakan dan melaporkan permasalah jalanan ke pihak berwajib yang
+          bertanggung jawab untuk memperbaikinya - Indonesia
+        </p>
+      </div>
+      <div class="foott">
+        <a href="report.html">Lapor Masalah</a>
+        <a href="allreports.html">Semua Laporan</a>
+        <a href="#">Bantuan</a>
+        <a href="#">Ketentuan Layanan</a>
+      </div>
+      <div class="foottt">
+        <a href="index.html">Beranda</a>
+        <a href="about.html">Tentang Kami</a>
+        <a href="#">Hubungi Kami</a>
+      </div>
+    </div>
+    <!-- footer end -->
+
+    <!-- My Script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
